@@ -9,7 +9,9 @@ class TestCalculateCommission:
         (1001,  100.0),
         (20000, 100.0),
         (20001, 400.01),
-        (50000, 700.0),
+        (40000, 600.0),
+        (40001, 500.0),
+        (50000, 500.0),
     ])
     def test_positive_commission(self, amount, expected):
         assert calculate_commission(amount) == expected
